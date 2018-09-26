@@ -1,5 +1,6 @@
 #include<iostream>
-#include<cstring> //get C-style strings, including strcat and strcpy
+#include<cstring> //get C-style strings, including strcat and 
+#include<string>
 using namespace std;
 
 int main() {
@@ -84,4 +85,43 @@ int main() {
     //including the whitespace and symobls, you'll get 28.
 
     //you can do some pretty cool stuff with these two methods.  Try out some ideas!
+
+    //MINI-MODULE: cin and typing
+    //====================
+
+    //so you may notice that cin can get a little funky with strings,
+    //especially when we use the >> operator
+
+    int a;
+    cout << "Enter a number" << endl; //all works fine and dandy
+    cin >> a;
+
+    string baz;
+    cout << "Enter a 2-word string" << endl; //enter "Hello World" here
+    cin >> baz;
+
+    string zoobaz;
+    cout << "Enter another string" << endl; //falls through, gets skipped
+    cin >> zoobaz;
+
+    cout << "Baz: " << baz << endl; //Hello
+    cout << "Zoobaz: " << zoobaz << endl; //World
+
+    //Weird! As you can see it falls through and applies to both variables.
+    //Luckily, we have a way around this, and it involves clearing out cin.
+
+    string course, ta_name;
+    cout << "Enter the name of this course: " << endl; //"E 115"
+    cin.ignore(); //clear out the whitespace from using >> before, prevent fall through
+    getline(cin, course);
+
+    cout << "Enter the name of the best TA: " << endl; //"Mark Freeman" obviously
+    getline(cin, ta_name); //we didn't use the carrot operator again, so no need to clear with cin.ignore()
+
+    cout << "The name of the course is: " + course << endl; //concatenation this time, for fun
+    cout << "The best TA is : " + ta_name << endl;
+
+    //this correctly assigns our variables as you can see.  Just be careful when using
+    //cin with strings, be sure to check what is getting assigned, and use cin.ignore()
+    //with getline() when necessary
 }
