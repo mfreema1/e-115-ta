@@ -1,5 +1,5 @@
 #include<iostream>
-#include<cstring> //get C-style strings, including strcat and 
+#include<cstring> //get C-style strings, including strcat and strlen
 #include<string>
 using namespace std;
 
