@@ -12,3 +12,6 @@ storing text instead of numbers.  The `strings.cpp` file will show instantiation
 
 ## Lab 5 - If/else, conditionals, and switch - 10/3/2018
 If/else and switch are both statements that allow us to modify the flow of our programs.  To control which branch of these statements get executed, we use conditionals.  Conditionals check one value against another to determine if a block should be executed.  Conditionals for if/else and switch statements behave somewhat differently, the semantics of which, we will cover.  The lab file `conditionals.cpp` shows examples of all of these constructs, explaining their use and functionality along the way.
+
+## Lab 6 - For and while loops - 10/10/2018
+For and while loops are ways of repeating a procedure based off of conditions in our code.  In `loops.cpp`, we will go over the differences between these two constructs and show some examples of them along the way.  We will also go over how to choose which one to implement in a given scenario.
