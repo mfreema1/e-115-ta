@@ -15,3 +15,6 @@ If/else and switch are both statements that allow us to modify the flow of our p
 
 ## Lab 6 - For and while loops - 10/10/2018
 For and while loops are ways of repeating a procedure based off of conditions in our code.  In `loops.cpp`, we will go over the differences between these two constructs and show some examples of them along the way.  We will also go over how to choose which one to implement in a given scenario.
+
+## Lab 7 - Functions - 10/31/2018 :ghost:
+Functions are ways of packaging up snippets of code to be run whenever we need.  They take in data through arguments and give back return values.  `functions.cpp` goes over the basic use of functions, such as defining and calling them in our code.  `recursive_examples.cpp` then quickly goes through some basic examples on recursion, which is a powerful programming tool that helps solve some complex problems very elegantly.  Recursion is not necessary for this week's assignments, but some extra food for thought never hurts!  See if you can find recursive solutions on your own!
