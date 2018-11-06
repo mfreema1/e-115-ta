@@ -1,1 +1,6 @@
-SuperSecretPasswordThatNobodyElseShouldSee
+Super Secret Password That Nobody Else Should See
+Hey guys,
+so, file I/O
+in C++ is
+kinda strange,
+but still cool!
