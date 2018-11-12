@@ -25,3 +25,8 @@ Functions are ways of packaging up snippets of code to be run whenever we need. 
 Classes are ways that we can model objects to make new data structures.  You can think of a class sort of like a "blueprint" for something, and objects are the things built from those blueprints.  `oop.cpp` goes into more detail on object oriented programming, such as the parts of a class and the vocabulary you will need to describe them.  For your reference, this file also provides an example class that models a golden retriever.
 
 `hint.cpp` will provide you with a couple of lines to get you started with this week's check plus assignment involving file I/O in C++.
+
+## Lab 9 - File I/O and Vectors - 11/14/2018
+Files are one way for us to keep data intact beyond the life of our program -- something we call "persisting" the data.  To do this, we use ifstream and ostream objects, which work similarly to other stream objects we are familiar with like cout and cin.  `files.cpp` will guide you through part of an example on file I/O with a raccoon shelter.  Feel free to experiment with this file, you will learn a lot by doing so!
+
+`raccoons.txt` provides you with an example of a text file we might generate to represent our raccoons.  The specific format in which the raccoons are stored is not important.  Focus on the ability to parse the file and create raccoon objects.  When you wish to store your raccoons, do the opposite -- converting raccoon objects into the form you parsed them from.
