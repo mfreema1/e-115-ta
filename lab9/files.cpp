@@ -82,11 +82,20 @@ class RaccoonShelter {
         //this is tied very closely to the constructor, be careful
         Raccoon deserialize(string line) {
             istringstream iss(line);
-            string arr[2];
-            for(int i = 0; i < 2; i++)
-                iss >> arr[i];
-            return Raccoon(arr[0], arr[1]);
+            string name;
+            string favoriteFood;
+            iss >> name;
+            iss >> favoriteFood;
+            return Raccoon(name, favoriteFood);
         }
+
+        // Raccoon deserialize(string line) {
+        //     istringstream iss(line);
+        //     string arr[2];
+        //     for(int i = 0; i < 2; i++)
+        //         iss >> arr[i];
+        //     return Raccoon(arr[0], arr[1]);
+        // }
 
         //where could we call this?
         void getRaccoonsFromFile(string fileName){
