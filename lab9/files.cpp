@@ -73,6 +73,10 @@ class Raccoon {
         string serialize() {
             return name + " " + favoriteFood;
         }
+
+        bool matches(string query) {
+            return (query == name || query == favoriteFood);
+        }
 };
 
 class RaccoonShelter {
@@ -110,10 +114,18 @@ class RaccoonShelter {
     public:
         RaccoonShelter() {
             this->raccoons = vector<Raccoon>();
+            getRaccoonsFromFile("raccoons.txt");
         }
 
         void addRacconToShelter(Raccoon r) {
             raccoons.push_back(r);
+        }
+
+        Raccoon searchShelter(string query) {
+            for(int i = 0; i < raccoons.size(); i++) {
+                if(raccoons[i].matches(query))
+                    return raccoons[i];
+            }
         }
 
         //why is this public?
