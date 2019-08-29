@@ -20,7 +20,7 @@ using namespace std;
 //We can use the fstream header to get access to two new objects -- ifstream 
 //and ofstream, which stand for input-file stream and output-file stream 
 //respectively.  As you'll see, these operate very similarly to the cin 
-//and cout objects that you're already used to using?  Why?  Could this 
+//and cout objects that you're already used to using.  Why?  Could this 
 //have something to do with them both being streams?
 
 //To create a stream to or from a file, we follow this basic format:
@@ -44,7 +44,7 @@ using namespace std;
 /**
  *  vector<Generic> name = vector<Generic>();
  *  
- *  Example: vector<Raccoon> raccoons = Vector<Raccoon>();
+ *  Example: vector<Raccoon> raccoons = vector<Raccoon>();
  */
 
 //But what the heck was that?  What is that <Generic> all about?  
@@ -81,13 +81,14 @@ class Raccoon {
 
 class RaccoonShelter {
     private:
-        vector<Raccoon> raccoons;
+        vector<Raccoon> raccoons; //composition
 
         //this is tied very closely to the constructor, be careful
         Raccoon deserialize(string line) {
             istringstream iss(line);
             string name;
             string favoriteFood;
+            
             iss >> name;
             iss >> favoriteFood;
             return Raccoon(name, favoriteFood);

@@ -42,7 +42,7 @@ int main() {
      * interesting, as they will keep their value.  But if we provide expressions that evaluate
      * to booleans, we can spice up our code. 
      * 
-     * Recall that expressions are simply operands mixed with operators that reuturn some kind of
+     * Recall that expressions are simply operands mixed with operators that return some kind of
      * value.  We use this returned value (true or false) to take the place of the boolean.
      */
 
