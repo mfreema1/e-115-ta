@@ -1,6 +1,6 @@
 #include<iostream> //define cout and cin
-#include<bits/stdc++.h> //define int max and min
-#include<float.h> //define float and double max and min
+#include<climits> //define int limits
+#include<cfloat> //define float and double limits
 using namespace std; //we're using the standard library
 
 /**
@@ -158,10 +158,10 @@ int main() {
         // (type_to_cast_to)value
 
     //So, to get the above equation to return a float, we could do:
-    cout << "Floated 5/4: " << (float)5 / 4 << endl; //result is a float
+    cout << "Floated 5/4: " << float(5) / 4 << endl; //result is a float
 
     //Or we could do something like:
-    cout << "Double 5/4: " << (double)5 / 4 << endl; //result is a double
+    cout << "Double 5/4: " << double(5) / 4 << endl; //result is a double
 
     //Typecasting works with all data types, beyond just these examples, and is
     //a very useful tool to master.
